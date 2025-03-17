@@ -18,7 +18,7 @@ const Password = require("./models/password"); // 💾 Password Model
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://passmangaorg.onrender.com", credentials: true }));
 
 // ✅ Connect to MongoDB
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
