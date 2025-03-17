@@ -13,7 +13,7 @@ const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/passmanga'
 const PORT = process.env.PORT || 3000;
 
 const authRoutes = require("./routes/authRoutes");
-const Password = require("./models/Password"); // 💾 Password Model
+const Password = require("./models/password"); // 💾 Password Model
 
 const app = express();
 app.use(express.json());
